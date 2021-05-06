@@ -8,3 +8,108 @@ header{
 header h1{
     text-align: center;
 }
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    
+}
+
+header nav a{
+    color: white;
+    padding: 20px 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #CEECF2;
+    margin: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#TableroDamas{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 10px 0;
+    background-color: #035E73;
+    border-radius: 5px;
+}
+
+section .contenedorJugadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    border-radius: 5px;
+    padding: 1vw;
+    background-color: #46B5B6;
+    box-shadow: 0 0 5px red;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+section .CasillasNegras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vw;
+    font-size: 1.5em;
+    color: #BF9E75;
+    background-color: #F27052;
+}
+
+section .CasillasBlancas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vw;
+    font-size: 1.5em;
+    color: #BF9E75;
+    background-color: #03A696;
+}
+
+section .DamasRojas{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #B6465F;
+    box-shadow: 0 0 7px red;
+    cursor: pointer;
+}
+
+section .DamasVerdes{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #BED8D4;
+    box-shadow: 0 0 7px white;
+    cursor: pointer;
+}
+
+footer{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
