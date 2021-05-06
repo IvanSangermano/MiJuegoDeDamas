@@ -35,17 +35,21 @@ body{
     margin: 0;
 }
 
-section{
+.ContenedorJugadoresTablero{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#TableroDamas{
+#TableroDamas div{
     display: flex;
     flex-direction: row;
-    width: 32vw;
-    height: 32vw;
+}
+
+#TableroDamas{
+    display: flex;
+    flex-direction: column;
     margin: 30px 0 10px 0;
     background-color: #035E73;
     border-radius: 5px;
@@ -74,7 +78,7 @@ section .contenedorJugadores{
     flex-direction: row;
 }
 
-section .CasillasNegras{
+.CasillasNegras{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +89,7 @@ section .CasillasNegras{
     background-color: rgba(29, 28, 28, 0.699);
 }
 
-section .CasillasBlancas{
+.CasillasBlancas{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +100,7 @@ section .CasillasBlancas{
     background-color: rgba(252, 252, 252, 0.932);
 }
 
-section .DamasRojas{
+.DamasRojas{
     width: 70%;
     height: 70%;
     border-radius: 50%;
@@ -105,7 +109,7 @@ section .DamasRojas{
     cursor: pointer;
 }
 
-section .DamasVerdes{
+.DamasVerdes{
     width: 70%;
     height: 70%;
     border-radius: 50%;
@@ -138,7 +142,7 @@ footer{
 /* MEDIAS QUERIES */
 @media (max-width: 800px)
 {
-    section{
+    .ContenedorJugadoresTablero{
         flex-direction: column;
     }
     div.contenedorJugadores{
@@ -147,5 +151,10 @@ footer{
     }
     #NombreJugador1, #NombreJugador2{
         padding-right: 2vw;
+    }
+
+    .CasillasNegras, .CasillasBlancas{
+        width: 7vw;
+        height: 7vw;
     }
 }
