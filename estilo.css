@@ -1,5 +1,4 @@
 header{
-    padding: 50px;
     background-image: url(./DamasHeader.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -15,7 +14,6 @@ header nav{
     align-items: center;
     justify-content: center;
     background-color: #333;
-    
 }
 
 header nav a{
@@ -61,10 +59,16 @@ section .contenedorJugadores{
     margin: 0 2vw 0 2vw;
     border-radius: 5px;
     padding: 1vw;
-    background-color: #46B5B6;
-    box-shadow: 0 0 5px red;
+    text-align: center;
 }
 
+#contenedor1{
+    background-color: rgba(255, 0, 0, 0.459);
+}
+
+#contenedor2{
+    background-color: rgba(0, 128, 0, 0.541);
+}
 .fila{
     display: flex;
     flex-direction: row;
@@ -78,7 +82,7 @@ section .CasillasNegras{
     height: 4vw;
     font-size: 1.5em;
     color: #BF9E75;
-    background-color: #F27052;
+    background-color: rgba(29, 28, 28, 0.699);
 }
 
 section .CasillasBlancas{
@@ -89,15 +93,15 @@ section .CasillasBlancas{
     height: 4vw;
     font-size: 1.5em;
     color: #BF9E75;
-    background-color: #03A696;
+    background-color: rgba(252, 252, 252, 0.932);
 }
 
 section .DamasRojas{
     width: 70%;
     height: 70%;
     border-radius: 50%;
-    background-color: #B6465F;
-    box-shadow: 0 0 7px red;
+    background-color: red;
+    box-shadow: 0 0 7px black;
     cursor: pointer;
 }
 
@@ -105,13 +109,43 @@ section .DamasVerdes{
     width: 70%;
     height: 70%;
     border-radius: 50%;
-    background-color: #BED8D4;
-    box-shadow: 0 0 7px white;
+    background-color: green;
+    box-shadow: 0 0 7px black;
     cursor: pointer;
+}
+
+#Boton{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #035E73;
+    margin:0 40vw 0 40vw;
+    border-radius: 5px;
+    padding: 1vw;
+    background-color: #46B5B6;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    text-align: center;
 }
 
 footer{
     background-color: white;
     padding: 10px;
     text-align: center;
+}
+
+
+/* MEDIAS QUERIES */
+@media (max-width: 800px)
+{
+    section{
+        flex-direction: column;
+    }
+    div.contenedorJugadores{
+        flex-direction: row;
+        padding: 1vw;
+    }
+    #NombreJugador1, #NombreJugador2{
+        padding-right: 2vw;
+    }
 }
