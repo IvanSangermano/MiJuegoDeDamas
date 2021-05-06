@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Damas Online</title>
+</head>
+<body>
+    <header>
+        <h1>MiniDamas</h1>
+
+        <nav>   
+            <a href="index.html">Pagina Principal</a>
+            <a href="LogIn.html">LogIn</a>
+            <a href="Instrucciones.html">Instrucciones</a>
+        </nav>
+
+    </header>
+
+    <section>
+        <!--Jugador Numero Uno-->
+        <div class=contenedorJugadores>
+            <p>Jugador 1 =</p>  
+            <p id=NombreJugador1>Nombre1</p>  
+            <p>Puntos</p>
+            <p id=PuntosJugador1>0</p>
+        </div>
+
+        <!--Tablero-->
+        <div id=TableroDamas>
+            <div class="Fila" id= Fila1>
+                <div id="F1C1" class="CasillasBlancas">
+                </div>
+                <div id="F1C2" class="CasillasNegras">
+                    <div id="damaR1" class=DamasRojas></div> 
+                </div>
+                <div id="F1C3" class="CasillasBlancas">
+                </div>
+                <div id="F1C4" class="CasillasNegras">
+                    <div id="damaR2" class=DamasRojas></div>
+                </div>
+                <div id="F1C5" class="CasillasBlancas">
+                </div>
+                <div id="F1C6" class="CasillasNegras">
+                    <div id="damaR3" class=DamasRojas></div>
+                </div>
+                <div id="F1C7" class="CasillasBlancas">
+                </div>
+                <div id="F1C8" class="CasillasNegras">
+                    <div id="damaR4" class=DamasRojas></div>
+                </div>
+        
+            </div>
+            <div class="Fila" id= Fila2>
+                <div id="F2C1" class="CasillasNegras">
+                    <div id="damaR5" class=DamasRojas></div>
+                </div>
+                <div id="F2C2" class="CasillasBlancas">
+                </div>
+                <div id="F2C3" class="CasillasNegras">
+                    <div id="damaR6" class=DamasRojas></div>
+                </div>
+                <div id="F2C4" class="CasillasBlancas">
+                </div>
+                <div id="F2C5" class="CasillasNegras">
+                    <div id="damaR7" class=DamasRojas></div>
+                </div>
+                <div id="F2C6" class="CasillasBlancas">
+                </div>
+                <div id="F2C7" class="CasillasNegras">
+                    <div id="damaR8" class=DamasRojas></div>
+                </div>
+                <div id="F2C8" class="CasillasBlancas">
+                </div>
+            </div>
+            <div class="Fila" id= Fila3>
+                <div id="a6" class="CasillasBlancas">
+                </div>
+                <div id="F3C1" class="CasillasNegras">
+                    <div id="damaR9" class=DamasRojas></div>
+                </div>
+                <div id="F3C2" class="CasillasBlancas">
+                </div>
+                <div id="F3C3" class="CasillasNegras">
+                    <div id="damaR10" class=DamasRojas></div>
+                </div>
+                <div id="F3C4" class="CasillasBlancas">
+                </div>
+                <div id="F3C5" class="CasillasNegras">
+                    <div id="damaR11" class=DamasRojas></div>
+                </div>
+                <div id="F3C6" class="CasillasBlancas">
+                </div>
+                <div id="F3C7" class="CasillasNegras">
+                    <div id="damaR12" class=DamasRojas></div>
+                </div>
+        
+            </div>
+            <div class="Fila" id= Fila4>
+        
+                <div id="F4C1" class="CasillasNegras">
+                </div>
+                <div id="F4C2" class="CasillasBlancas">
+                </div>
+                <div id="F4C3" class="CasillasNegras">
+                </div>
+                <div id="F4C4" class="CasillasBlancas">
+                </div>
+                <div id="F4C5" class="CasillasNegras">
+                </div>
+                <div id="F4C6" class="CasillasBlancas">
+                </div>
+                <div id="F4C7" class="CasillasNegras">
+                </div>
+                <div id="F4C8" class="CasillasBlancas">
+                </div>
+        
+            </div>
+            <div class="Fila" id= Fila5>
+        
+                <div id="F5C1" class="CasillasBlancas">
+                </div>
+                <div id="F5C2" class="CasillasNegras">
+                </div>
+                <div id="F5C3" class="CasillasBlancas">
+                </div>
+                <div id="F5C4" class="CasillasNegras">
+                </div>
+                <div id="F5C5" class="CasillasBlancas">
+                </div>
+                <div id="F5C6" class="CasillasNegras">
+                </div>
+                <div id="F5C7" class="CasillasBlancas">
+                </div>
+                <div id="F5C8" class="CasillasNegras">
+                </div>
+        
+            </div>
+            <div class="Fila" id= Fila6>
+        
+                <div id="F6C1" class="CasillasNegras">
+                    <div id="damaV12" class=DamasVerdes></div>
+                </div>
+                <div id="F6C2" class="CasillasBlancas">
+                </div>
+                <div id="F6C3" class="CasillasNegras">
+                    <div id="damaV11" class=DamasVerdes></div>
+                </div>
+                <div id="F6C4" class="CasillasBlancas">
+                </div>
+                <div id="F6C5" class="CasillasNegras">
+                    <div id="damaV10" class=DamasVerdes></div>
+                </div>
+                <div id="F6C6" class="CasillasBlancas">
+                </div>
+                <div id="F6C7" class="CasillasNegras">
+                    <div id="damaV9" class=DamasVerdes></div>
+                </div>
+                <div id="F6C8" class="CasillasBlancas">
+                </div>
+        
+            </div>  
+            <div class="Fila" id= Fila7>
+                <div id="F7C1" class="CasillasBlancas">
+                </div>
+                <div id="F7C2" class="CasillasNegras">
+                    <div id="damaV8" class=DamasVerdes></div>
+                </div>
+                <div id="F7C3" class="CasillasBlancas">
+                </div>
+                <div id="F7C4" class="CasillasNegras">
+                    <div id="damaV7" class=DamasVerdes></div>
+                </div>
+                <div id="F7C5" class="CasillasBlancas">
+                </div>
+                <div id="F7C6" class="CasillasNegras">
+                    <div id="damaV6" class=DamasVerdes></div>
+                </div>
+                <div id="F7C7" class="CasillasBlancas">
+                </div>
+                <div id="F7C8" class="CasillasNegras">
+                    <div id="damaV5" class=DamasVerdes></div>
+                </div>
+            </div>   
+            <div class="Fila" id= Fila8>
+                <div id="F8C1" class="CasillasNegras">
+                    <div id="damaV4" class=DamasVerdes></div>
+                </div>
+                <div id="F8C2" class="CasillasBlancas">
+                </div>
+                <div id="F8C3" class="CasillasNegras">
+                    <div id="damaV3" class=DamasVerdes></div>
+                </div>
+                <div id="F8C4" class="CasillasBlancas">
+                </div>
+                <div id="F8C5" class="CasillasNegras">
+                    <div id="damaV2" class=DamasVerdes></div>
+                </div>
+                <div id="F8C6" class="CasillasBlancas">
+                </div>
+                <div id="F8C7" class="CasillasNegras">
+                    <div id="damaV1" class=DamasVerdes></div>
+                </div>
+                <div id="F8C8" class="CasillasBlancas">
+                </div>
+            </div>
+        </div>
+
+        <!--Jugador Numero Dos-->
+        <div class=contenedorJugadores>
+            <p>Jugador 2 =</p>  
+            <p id=NombreJugador2>Nombre2</p>  
+            <p>Puntos</p>
+            <p id=PuntosJugador2>0</p>
+        </div>
+    </section>
+
+    <div id= Boton>
+       <p>ACA VA UN BOTON</p>
+    </div>
+
+    <footer>
+        <p><a href="https://es.wikipedia.org/wiki/Damas#:~:text=Se%20juega%20por%20turnos%20alternos,a%20una%20posici%C3%B3n%20adyacente%20vac%C3%ADa.">Click aqui para leer el Reglamento</a> - MiniDamas creado por Ivan Sangermano. Año de creacion: 2021</p>
+    </footer>
+
+</body>
+</html>

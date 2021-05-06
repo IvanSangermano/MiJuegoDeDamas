@@ -1,0 +1,10 @@
+header{
+    padding: 50px;
+    background-image: url(./DamasHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+header h1{
+    text-align: center;
+}
