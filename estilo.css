@@ -53,6 +53,8 @@ body{
     margin: 30px 0 10px 0;
     background-color: #035E73;
     border-radius: 5px;
+    padding: 1vw;
+
 }
 
 section .contenedorJugadores{
@@ -68,6 +70,7 @@ section .contenedorJugadores{
 
 #contenedor1{
     background-color: rgba(255, 0, 0, 0.459);
+    box-shadow: 0 0 20px black;
 }
 
 #contenedor2{
