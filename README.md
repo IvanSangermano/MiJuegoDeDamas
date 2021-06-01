@@ -11,3 +11,7 @@ Por medio del "Visual Studio Code" se ha implementado HTML5, CSS y JavaScript pa
 3.Correccion de Tablero.
 
 4.Medias Queries.
+
+5.Correccion de errores
+
+6.Creacion de tablero mediante JS
