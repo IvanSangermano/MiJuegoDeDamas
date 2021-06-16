@@ -26,28 +26,18 @@ var fichaSeleccionada = {
 
 // TABLERO
 
-// var tableroArray = [
-//   [null, 1, null, 1, null, 1, null, 1],
-//   [1, null, 1, null, 1, null, 1, null],
-//   [null, 1, null, 1, null, 1, null, 1],
-//   [null, null, null, null, null, null, null, null],
-//   [null, null, null, null, null, null, null, null],
-//   [2, null, 2, null, 2, null, 2, null],
-//   [null, 2, null, 2, null, 2, null, 2],
-//   [2, null, 2, null, 2, null, 2, null],
-// ]
-
-
 var tableroArray = [
-    [null, null, null, null, null, null, null, null],
+  [null, 1, null, 1, null, 1, null, 1],
+  [1, null, 1, null, 1, null, 1, null],
+  [null, 1, null, 1, null, 1, null, 1],
   [null, null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null, null],
-  [null, null, null, null, null, null, null, null],
-  [null, null, null, 2, null , null, null, null],
-  [null, null, null, null, null, null, 1, null],
-  [null, null, null, null, null, 2, null, null],
-  [null, null, null, null, null, null, null, null],
+  [2, null, 2, null, 2, null, 2, null],
+  [null, 2, null, 2, null, 2, null, 2],
+  [2, null, 2, null, 2, null, 2, null],
 ]
+
+
 
 function crearTablero() {
   var tablero = document.getElementById('TableroDamas')
