@@ -17,8 +17,5 @@ Por medio del "Visual Studio Code" se ha implementado HTML5, CSS y JavaScript pa
 6.Creacion de tablero mediante JS
 
 7 y 8.Eliminacion y Nueva creacion de logica para tablero (hasta convertirse en rey, sin movimientos)
-<<<<<<< HEAD
 
 9. Correcion al Array del Tablero
-=======
->>>>>>> edd57a515c7e93a1a72845979edeacf97b5ae18b
