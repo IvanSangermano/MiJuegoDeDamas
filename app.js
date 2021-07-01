@@ -24,6 +24,16 @@ var fichaSeleccionada = {
   movFilaComerPintado: null,
 }
 
+// PASAR DATOS AL SERVIDOR
+
+var data = {
+  jugador: null,
+  idFila: null,
+  idColumna: null
+}
+var url = 'https://jsonplaceholder.typicode.com/posts'
+
+
 // TABLERO
 
 var tableroArray = [
@@ -364,6 +374,11 @@ function moverFicha(filaMover, columnaMover, tipoComer) {
     divPintar.style.backgroundColor = 'rgba(29, 28, 28, 0.699)'
   }
 
+  data.jugador = turno.toString();
+  data.idFila = filaMover.toString();
+  data.idColumna = columnaMover.toString();
+  enviarDatosServidor(url, data)
+  
   quitarEventosClickPosibles()
 }
 
@@ -452,6 +467,19 @@ function resetearObjeto() {
     agregarEvento()
     quitarEvento = false
     contadorClicks = 0
+}
+
+function enviarDatosServidor(url, objFicha) {
+  fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(data)
+  })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+    })
+    .catch(err => console.log(err))
+    console.log(objFicha);
 }
 
 agregarEvento()
