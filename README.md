@@ -19,3 +19,5 @@ Por medio del "Visual Studio Code" se ha implementado HTML5, CSS y JavaScript pa
 7 y 8.Eliminacion y Nueva creacion de logica para tablero (hasta convertirse en rey, sin movimientos)
 
 9. Correcion al Array del Tablero
+
+10. Envio de datos del formulario registro a la API

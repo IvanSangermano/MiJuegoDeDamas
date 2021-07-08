@@ -24,16 +24,6 @@ var fichaSeleccionada = {
   movFilaComerPintado: null,
 }
 
-// PASAR DATOS AL SERVIDOR
-
-var data = {
-  jugador: null,
-  idFila: null,
-  idColumna: null
-}
-var url = 'https://jsonplaceholder.typicode.com/posts'
-
-
 // TABLERO
 
 var tableroArray = [
@@ -122,13 +112,6 @@ function obtenerFichaSeleccionada(ev) {
     fichaSeleccionada.esRey = true;
   }
 }
-
-// logica para es rey
-
-// hacer un for para recorrer el tablero y en el mismo for incrementar en 1 con el i del for el idFila y el idColumna
-// luego verificar que las posiciones del tablero esten en nulas para pintarlas y agregarle el evento onclick
-// luego si se encuentra con una ficha enemiga, validar posible comer 
-// hacer variables booleanas que sea una para mover y otra comerMover para cortar el for
 
 function buscarEspaciosDisponibles(fila, columna) {
 
@@ -373,11 +356,6 @@ function moverFicha(filaMover, columnaMover, tipoComer) {
     var divPintar = document.getElementById('fila-' + (fichaSeleccionada.movFilaPintar + filaTurno) + '-col-' +fichaSeleccionada.movComerIzqPintado)
     divPintar.style.backgroundColor = 'rgba(29, 28, 28, 0.699)'
   }
-
-  data.jugador = turno.toString();
-  data.idFila = filaMover.toString();
-  data.idColumna = columnaMover.toString();
-  enviarDatosServidor(url, data)
   
   quitarEventosClickPosibles()
 }
