@@ -1,56 +1,70 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <script src="app.js" defer></script>
-    <title>Damas Online</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Damas Gratis</title>
+	<link rel="stylesheet" href="Style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+	<script src="app.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>MiniDamas</h1>
+	<header>
+		<!--Navegación-->
+		<nav class="navegacion">
+			<h1>DAMAS GRATIS</h1>
+			<div class="registro-login">
+				<a href="registro.html">Registro</a>
+				<a href="#"> Iniciar sesión</a>
+			</div>
+		</nav>
+	</header>
 
-        <nav>   
-            <a href="index.html">Pagina Principal</a>
-            <a href="registro.html">LogIn</a>
-            <a href="Instrucciones.html">Instrucciones</a>
-        </nav>
+	<main>
+		<!-- Jugador 1-->
+		<div id="jugador1" class="contenedorJugadores">
+			<div class="casillasNegras">
+				<div class="damasAmarillas"> </div>
+			</div>
 
-    </header>
+			<p>Jugador 1</p>
+			<p>Puntos:</p>
+			<p id="puntos-jugador1" class="puntos">0</p>
+		</div>
 
-    <section class = ContenedorJugadoresTablero>
-        <!--Jugador Numero Uno-->
-        <div class="contenedorJugadores" id=contenedor1>
-            <p>Jugador 1:</p>  
-            <p id=NombreJugador1>Nombre1</p>  
-            <p>Puntos:</p>
-            <p id=PuntosJugador1>0</p>
-        </div>
+		<!--Tablero-->
+		<div id="tablero" class="tablero"></div>
 
-        <!--Tablero-->
+		<!-- Jugador 2-->
+		<div id="jugador2" class="contenedorJugadores">
+			<div class="casillasNegras">
+				<div class="damasVerdes"> </div>
+			</div>
 
-        <div id=TableroDamas>
-        <!--Aca se ingresa por medio de JS-->
-        </div>
+			<p>Jugador 2</p>
+			<p>Puntos:</p>
+			<p id="puntos-jugador2" class="puntos">0</p>
+		</div>
+	</main>
+	<div class="boton">
+		<input type="button" id="guardar" class="button" value="Guardar partida" />
+		<input type="button" class="button" value="Nueva partida" />
+		<input type="button" id="cargar" class="button" value="Cargar partida" />
 
-        <!--Jugador Numero Dos-->
-        <div class="contenedorJugadores" id=contenedor2>
-            <p>Jugador 2:</p>  
-            <p id=NombreJugador2>Nombre2</p>  
-            <p>Puntos:</p>
-            <p id=PuntosJugador2>0</p>
-        </div>
-    </section>
+	</div>
 
-    <div>
-       <p id=Boton>Iniciar Partida</p>
-    </div>
-
-    <footer>
-        <p><a href="https://es.wikipedia.org/wiki/Damas#:~:text=Se%20juega%20por%20turnos%20alternos,a%20una%20posici%C3%B3n%20adyacente%20vac%C3%ADa.">Click aqui para leer el Reglamento</a> - MiniDamas creado por Ivan Sangermano. Año de creacion: 2021</p>
-    </footer>
-
+	<footer>
+		<!--Pie de pagina-->
+		<div class="contenedor-footer">
+			<p class="pie-descripcion"> Autor: Virgili Matias, 2021</p>
+			<a href="https://es.wikipedia.org/wiki/Damas">¿Cómo jugar?</a>
+		</div>
+	</footer>
 </body>
+
 </html>
